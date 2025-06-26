@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AutoGMP Doc Generator</title>
+</head>
+<body>
+    <h1>AutoGMP Protocol Generator</h1>
+    <form method="post">
+        <label>System Name:</label><br>
+        <input type="text" name="system" required><br><br>
+
+        <label>Author:</label><br>
+        <input type="text" name="author" required><br><br>
+
+        <label>Date:</label><br>
+        <input type="date" name="date" value="{{ date }}" required><br><br>
+
+        <label>Description:</label><br>
+        <textarea name="description" required></textarea><br><br>
+
+        <label>Test Steps:</label><br>
+        <textarea name="test_steps" required></textarea><br><br>
+
+        <button type="submit">Generate Protocol</button>
+    </form>
+</body>
+</html>
